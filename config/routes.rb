@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   get 'users/show'
   get 'users/new'
   get 'users/create'
-    #root to: "tasks#index"
-    root to: 'toppages#index'
+    root to: "tasks#index"
+    
+      #root to: 'toppages#index'
     
      get 'login', to: 'sessions#new'
      post 'login', to: 'sessions#create'
